@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
+import * as net from 'net';
 
 class ElectronApp {
   private mainWindow: BrowserWindow | null = null;
@@ -36,7 +37,7 @@ class ElectronApp {
 
     // Load the React app
     if (process.env.NODE_ENV === 'development') {
-      this.mainWindow.loadURL('http://localhost:3000');
+      this.loadDevServer();
       this.mainWindow.webContents.openDevTools();
     } else {
       this.mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'));
@@ -51,6 +52,33 @@ class ElectronApp {
     this.mainWindow.on('closed', () => {
       this.mainWindow = null;
     });
+  }
+
+  private async loadDevServer(): Promise<void> {
+    const devPorts = [8080, 8081, 8082, 3000, 3001, 3002];
+    
+    for (const port of devPorts) {
+      try {
+        await new Promise<void>((resolve, reject) => {
+          const client = net.createConnection(port, 'localhost', () => {
+            client.end();
+            resolve();
+          });
+          client.on('error', reject);
+          setTimeout(() => reject(new Error('timeout')), 1000);
+        });
+        
+        console.log(`Found dev server on port ${port}`);
+        await this.mainWindow?.loadURL(`http://localhost:${port}`);
+        return;
+      } catch (error) {
+        // Port not available, try next
+      }
+    }
+    
+    // Fallback to file if no dev server found
+    console.log('No dev server found, loading file');
+    await this.mainWindow?.loadFile(path.join(__dirname, '../renderer/index.html'));
   }
 
   private setupEventHandlers(): void {

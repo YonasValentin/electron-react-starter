@@ -46,7 +46,15 @@ module.exports = {
     })
   ],
   devServer: {
-    port: 3000,
-    hot: true
+    port: 'auto',
+    hot: true,
+    open: false,
+    historyApiFallback: true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   }
 };
