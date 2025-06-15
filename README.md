@@ -1,13 +1,13 @@
 [![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/YonasValentin)
 
-# create-electron-app
+# electron-react-starter
 
 Create modern Electron apps with an interactive CLI - just like Create React App, but for Electron! 🚀
 
 ## Quick Start
 
 ```bash
-npx create-electron-app my-electron-app
+npx electron-react-starter my-electron-app
 cd my-electron-app
 npm run dev
 ```
@@ -17,11 +17,11 @@ npm run dev
 The CLI will walk you through setting up your project with modern tooling:
 
 ```
-✨ Welcome to create-electron-app!
+✨ Welcome to electron-react-starter!
 
 ? What is your project named? my-electron-app
 ? Would you like to use TypeScript? Yes
-? Would you like to use Tailwind CSS? Yes  
+? Would you like to use Tailwind CSS? Yes
 ? Would you like to use React Router? No
 ? Would you like to use ESLint? Yes
 ? Would you like to include Mac App Store configuration? Yes
@@ -30,7 +30,7 @@ The CLI will walk you through setting up your project with modern tooling:
 
 Creating my-electron-app...
 ✅ Created project structure
-✅ Copied template files  
+✅ Copied template files
 ✅ Installed dependencies
 ✅ Initialized git repository
 

@@ -14,7 +14,7 @@ if (!semver.satisfies(currentNodeVersion, requiredNodeVersion)) {
   console.error(
     chalk.red(
       `You are running Node ${currentNodeVersion}.\n` +
-        `create-electron-app requires Node ${requiredNodeVersion}.\n` +
+        `electron-react-starter requires Node ${requiredNodeVersion}.\n` +
         `Please update your version of Node.`
     )
   );

@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2024-01-15
 
 ### Added
-- Initial release of create-electron-app CLI
+
+- Initial release of electron-react-starter CLI
 - Interactive project setup with prompts
 - Support for TypeScript projects
 - Tailwind CSS integration option
@@ -24,10 +25,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Electron Builder configuration for distribution
 
 ### Features
+
 - Cross-platform support (Windows, macOS, Linux)
 - Git repository initialization
 - Automatic dependency installation
 - Flexible template system for combining features
 - Validation for project names and directories
 
-[0.1.0]: https://github.com/yonasvalentin/create-electron-app/releases/tag/v0.1.0
+[0.1.0]: https://github.com/yonasvalentin/electron-react-starter/releases/tag/v0.1.0

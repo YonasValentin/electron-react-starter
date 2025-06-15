@@ -4,7 +4,7 @@
   "description": "Create modern Electron apps with an interactive CLI",
   "main": "lib/create-app.js",
   "bin": {
-    "create-electron-app": "bin/create-electron-app.js"
+    "electron-react-starter": "bin/electron-react-starter.js"
   },
   "files": [
     "bin",
@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yonasvalentin/create-electron-app.git"
+    "url": "https://github.com/yonasvalentin/electron-react-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/yonasvalentin/create-electron-app/issues"
+    "url": "https://github.com/yonasvalentin/electron-react-starter/issues"
   },
-  "homepage": "https://github.com/yonasvalentin/create-electron-app#readme",
+  "homepage": "https://github.com/yonasvalentin/electron-react-starter#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.1.0",

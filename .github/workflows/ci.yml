@@ -58,7 +58,7 @@ jobs:
     - name: Check if version changed
       id: version
       run: |
-        PUBLISHED_VERSION=$(npm view @yonasvalentin/create-electron-app version 2>/dev/null || echo "0.0.0")
+        PUBLISHED_VERSION=$(npm view electron-react-starter version 2>/dev/null || echo "0.0.0")
         PACKAGE_VERSION=$(node -p "require('./package.json').version")
         if [ "$PUBLISHED_VERSION" != "$PACKAGE_VERSION" ]; then
           echo "changed=true" >> $GITHUB_OUTPUT
