@@ -1,0 +1,13 @@
+CLAUDE.md
+tests/
+test-output/
+.github/
+.prettierrc
+.eslintrc.js
+jest.config.js
+*.log
+.DS_Store
+node_modules/
+coverage/
+.git/
+.gitignore

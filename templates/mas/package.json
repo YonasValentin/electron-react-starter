@@ -1,0 +1,11 @@
+{
+  "build": {
+    "mas": {
+      "category": "public.app-category.developer-tools",
+      "hardenedRuntime": true,
+      "entitlements": "./build/entitlements.mas.plist",
+      "entitlementsInherit": "./build/entitlements.mas.inherit.plist",
+      "provisioningProfile": "embedded.provisionprofile"
+    }
+  }
+}

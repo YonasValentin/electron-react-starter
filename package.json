@@ -1,0 +1,65 @@
+{
+  "name": "electron-react-starter",
+  "version": "0.1.0",
+  "description": "Create modern Electron apps with an interactive CLI",
+  "main": "lib/create-app.js",
+  "bin": {
+    "create-electron-app": "bin/create-electron-app.js"
+  },
+  "files": [
+    "bin",
+    "lib", 
+    "templates"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:integration": "jest tests/integration",
+    "lint": "eslint lib bin --ext .js --fix",
+    "format": "prettier --write lib bin",
+    "validate": "npm run lint",
+    "prepublishOnly": "npm run validate"
+  },
+  "keywords": [
+    "electron",
+    "react", 
+    "typescript",
+    "tailwindcss",
+    "desktop",
+    "app",
+    "boilerplate",
+    "cli",
+    "generator"
+  ],
+  "author": "Yonas Valentin <yonas@valentin.dk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yonasvalentin/create-electron-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yonasvalentin/create-electron-app/issues"
+  },
+  "homepage": "https://github.com/yonasvalentin/create-electron-app#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^5.4.1",
+    "prompts": "^2.4.2",
+    "semver": "^7.5.4",
+    "validate-npm-package-name": "^5.0.0",
+    "cross-spawn": "^7.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "tmp": "^0.2.1"
+  }
+}

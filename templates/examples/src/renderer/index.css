@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+
+.app-header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e2127;
+}
+
+.app-header h1 {
+  margin: 0 0 1rem 0;
+  color: #61dafb;
+}
+
+.app-main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.component {
+  background-color: #3a3f47;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.component h2 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4fa8c5;
+}
+
+.system-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.system-info li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #282c34;
+}
+
+.note {
+  font-size: 0.875rem;
+  color: #888;
+  margin-top: 1rem;
+  font-style: italic;
+}
