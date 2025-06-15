@@ -1,6 +1,6 @@
 {
   "name": "electron-react-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create modern Electron apps with an interactive CLI",
   "main": "lib/create-app.js",
   "bin": {
